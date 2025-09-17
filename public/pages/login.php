@@ -8,6 +8,7 @@ session_start();
 if (isset($_SESSION['msg'])) {
     echo "<p style='color: green;'>" . $_SESSION['msg'] . "</p>";
     unset($_SESSION['msg']); // limpa a mensagem para não aparecer de novo
+
 }
 ?>
 

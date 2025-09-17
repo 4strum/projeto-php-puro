@@ -11,9 +11,15 @@ if (isset($_SESSION['msg'])) {
 }
 ?>
 
-    <h1>Bem-vindo ao sistema!</h1>
-    <p>Aqui você pode gerenciar seus agendamentos.</p>
 
+<a href="../pages/clientes/create.php">Cadastrar Cliente</a>
+
+<h1>Bem-vindo ao sistema!</h1>
+<p>Aqui você pode gerenciar seus agendamentos.</p>
+
+<?php
+var_dump($_SESSION);
+?>
 
 
 

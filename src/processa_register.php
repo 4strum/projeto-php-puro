@@ -2,7 +2,7 @@
 require_once 'conexao.php'; // Inclui o arquivo de conexão
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome  = trim($_POST["nome"]);
+    $nome = trim($_POST["nome"]);
     $email = trim($_POST["email"]);
     $senha = $_POST["senha"];
 
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($ok) {
         $_SESSION['msg'] = "Cadastro realizado com sucesso!";
-        header("Location: login.php");
+        header("Location: ../public/pages/login.php");
         exit;
     } else {
         echo "Erro ao cadastrar.";
